@@ -20,7 +20,7 @@ export default async function handler(req, res) {
         // Rewrite URL .m3u8
         if (targetUrl.includes('.m3u8')) {
             const baseUrl = targetUrl.substring(0, targetUrl.lastIndexOf('/'));
-            const proxyBase = 'https://YOUR-PROJECT.vercel.app/api/proxy?url=';
+            const proxyBase = 'https://examples-hello-world.ayobanyuwangi.deno.net/api/proxy?url=';
 
             body = body.split('\n').map(line => {
                 line = line.trim();
